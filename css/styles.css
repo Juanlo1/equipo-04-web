@@ -75,3 +75,53 @@ footer {
 
 /* Issue #4 · Paleta y tipografía del equipo.
    Escribid aquí vuestros cambios de color y de tipo de letra. */
+
+:root {
+  --color-primary: #1e293b;
+  --color-secondary: #2563eb;
+  --color-bg-main: #f8fafc;
+  --color-bg-card: #ffffff;
+  --color-text-main: #334155;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --font-family-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --box-shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+
+.miembro {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.miembro:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.miembro h3 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.miembro .rol {
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+footer {
+  background: var(--color-primary);
+  color: #ffffff;
+}
