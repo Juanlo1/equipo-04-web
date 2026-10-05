@@ -12,11 +12,11 @@ body {
   color: #222222;
 }
 
-/* Issue #1 · Cabecera y menú */
+/* Issue #1 · Cabecera y menú 2 */
 header {
   background:pink;
   color: green;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 3rem;
 }
 
 header h1 {
