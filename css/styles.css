@@ -125,3 +125,52 @@ footer {
   background: var(--color-primary);
   color: #ffffff;
 }
+/* Issue #6 · Modo oscuro.
+   Se activa con el botón de la cabecera (atributo data-tema="oscuro" en <html>). */
+
+:root[data-tema="oscuro"] {
+  --color-primary: #e2e8f0;
+  --color-secondary: #60a5fa;
+  --color-bg-main: #0f172a;
+  --color-bg-card: #1e293b;
+  --color-text-main: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+  --box-shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}
+
+:root[data-tema="oscuro"] header {
+  background: #1e293b;
+  color: #f9a8d4;
+}
+
+:root[data-tema="oscuro"] footer {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+body,
+header,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-tema {
+  margin-top: 1rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.boton-tema:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+:root[data-tema="oscuro"] .boton-tema:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
