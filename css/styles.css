@@ -125,3 +125,35 @@ footer {
   background: var(--color-primary);
   color: #ffffff;
 }
+
+.galeria {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.galeria-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeria-item p {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+}
