@@ -33,12 +33,12 @@ header nav ul {
 }
 
 header nav a {
-  color: #ffffff;
-  text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  color: #000000;
 }
 
 /* Contenido */
